@@ -1,0 +1,32 @@
+{
+  "name": "@andersonfrfilho/aula-01",
+  "version": "1.0.0",
+  "description": "Funcionamento do streams",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "karma start",
+    "dev": "webpack-dev-server --inline --hot",
+    "start:dev:socket:3": "ts-node --experimental-default-type='commonjs' ./3.native-stream-socket",
+    "dev:socket:4": "ts-node ./4.native-stream-readble-writable.ts",
+    "dev:socket:5": "ts-node ./5.native-stream-transform",
+    "dev:socket:6": "ts-node ./6.native-stream-duplex",
+    "build": "webpack -p"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^5.1.4",
+    "jasmine-core": "^5.1.2",
+    "karma": "^6.4.3",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-jasmine": "^5.1.0",
+    "karma-webpack": "^5.0.1",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
